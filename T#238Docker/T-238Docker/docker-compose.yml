@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  api:
+    build: .  # Build the service using the Dockerfile located in the current directory
+    ports:
+      - 8080:8080  # Map port 8080 of the host machine to port 8080 of the service container
+    restart: on-failure  # Automatically restart the container if it fails
